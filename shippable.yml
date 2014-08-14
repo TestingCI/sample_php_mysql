@@ -3,7 +3,9 @@ language: php
 php: 
   - 5.4
 env:
-  secure: XM9jh5R+1kXucVVWDYM6de+MvxPiarOudVKQFW1N10uHzO+Aflmgpdzkp9a1fpQoQ/17E6tds45e4a5J3i+1xS3cbBrLNuO0j1GzaPZYXoy43JRXWevmuCPIIsTNezbQsGUqweiBzYnHdDoy2c52R2HhR6kEtCxbpNAsrdcmDpCFvR8CEFVAr8ptnI+V09vDxRA+80xaKPHy0KkMANJUz9517rNJ+1ctYYqZOjGxLTEJh9YuFOUZ3gpW7gHoUSlgUbSpRHuJc1tvNUVcmxCPBRE8IpyyLT36FWwNFAMP/eILobbDYT2KlB90eib7VqK3+BlsiOr5dQ4K+gp9mDJp+w==
+ global:
+  - secure: sWlphPakRAj5iAozHGNspU8zHk23nswdW/xrN3VhPvt/F6iQmVKqnBObMwIxWM4/AfxIfapY9N27inCbCwCxX1oeidE5LUQrXb2mzgvVDAD46zjcTt3PSWqsBigF3tPH0FpPCUj3MGarmWdhIUZsSDnTARQlU51ZsHKxK3lfhrZLzsItWF640mXiRRoWxgGZX0DqTMcTIh3D+7gQBbLB2Wl1IN3f3lUGfLv7CXLvy2+GQQl4oHpRn5765ygacnQ3+G6FB9XRQvBSyHUnjPjOocMnmH6+F+rnYz4XTmo3qRdLfzmfJEZIo19QT0um75O4dE1jydJv3jlEnisPObjx9Q==
+  - bar=foo
 
 before_script: 
   - mkdir -p shippable/testresults
