@@ -14,7 +14,3 @@ before_script:
 
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage test.php
-  
-branches:
-  only:
-    - master
