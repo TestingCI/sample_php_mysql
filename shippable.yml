@@ -3,13 +3,14 @@ language: php
 php: 
   - 5.5
  # - 5.4
-
+env:
+ - secure: qCgT6FSoa80fWHQGirf1zNDSHn0PVUk2haoJRKZo/msxGieusu5TCLsO52hi4IJe0A8jsQjeVlCXEWG/DexK1+yPHavGOGeoSnaCV5GV5F8HKezfiUr1GtnFniHC2rz4FNswCAeGc8zKzxN7Wbt3sHw8YFEC28/uWTJGGhi/3HqXVt3no7RaSKSJmr5lLmdvThl+2bZCP03zAnYHNhhnMcxdTw/+TgKzN7a7eLHRKslHin4JLYefW46nWKMMmjw8rAs6oiAgo2cjOXrwcrIYBoBNned9cySNy0zWnbO3gEtQ9V7UDAyrxU8gsoEI6/wm4tIrZ/KV4+uJ3xpOOPwTig==
 
 before_script: 
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - mysql -e 'create database if not exists test;'
-
+  - echo $test 
 
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage test.php
