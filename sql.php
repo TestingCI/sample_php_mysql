@@ -6,7 +6,7 @@ class SQL {
     mysqli_query($con, $q);
     $q="CREATE TABLE things (name varchar(20))";
     mysqli_query($con, $q);
-    $q="INSERT INTO things(name) VALUES('20')";
+    $q="INSERT INTO things(name) VALUES('dre')";
     mysqli_query($con, $q);
     $q="SELECT * FROM things";
     return mysqli_query($con, $q);
